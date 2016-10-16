@@ -1,0 +1,31 @@
+<HEAD>
+ <SCRIPT language="JavaScript">
+<!--
+function get_random()
+{
+    var ranNum= Math.floor(Math.random()*5);
+    return ranNum;
+}
+
+function gLink()
+{
+   var wLink=get_random();
+
+    var link=new Array(5)
+     link[0]="http://www.google.com";
+     link[1]="http://www.msn.com";
+     link[2]="http://www.yahoo.com";
+     link[3]="http://www.ebay.com";
+     link[4]="http://www.cnn.com";
+
+   window.location = (link[wLink]);
+  }
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM name="gotolink">
+<INPUT TYPE="button" value="Go to random link!" onClick="gLink()">
+</FORM>
+</BODY>
